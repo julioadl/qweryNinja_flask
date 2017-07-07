@@ -1,0 +1,78 @@
+.left-tag{
+
+}
+.right-tag{
+  text-align: center;
+}
+
+.tmBlue{
+  background-color: #0af;
+}
+
+.tmBlue-text{
+  color: #0af;
+}
+
+.tmGreen{
+background-color: #5bc500;
+}
+
+.tmGreen-text{
+color: #5bc500;
+}
+
+.value-tag{
+    width: 100%;
+    padding: 3px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.slider-panel{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+}
+
+.logo-nav{
+  max-height: 60px;
+}
+
+.tagline{
+  font-size: 2em;
+}
+
+.scroll-divs {
+padding-top: 60px;
+margin-top: -60px;
+}
+
+.steps{
+  font-size: 1.2em;
+}
+
+.parallax-section-title{
+  height: 150px;
+}
+.parallax-section-title-2{
+  height: 100px;
+}
+
+.section-divider{
+  height: 60px;
+}
+
+.tooltip {
+  background: #fff;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  display: none;
+  font-size: 13px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 95px;
+  width: 80px;
+  z-index: 10;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css')}}"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/qwery.css')}}"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+      <nav class="white">
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="#" class="brand-logo"><img src="https://www.telefonica.com/documents/153952/154445/lgo_movistar_at.png/52fb54ac-f910-4fae-b35e-4214e10efd55?t=1438154881981" alt="logo movistar" class="logo-nav"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a class="tmBlue-text" href="#inicio">Inicio</a></li>
+              <li><a class="tmBlue-text" href="#process">Ejemplo de proceso</a></li>
+              <li><a class="tmBlue-text" href="#results">Ejemplo de resultado</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+
+      <div class="parallax-container center scroll-divs" id="inicio">
+        <div class="parallax"><img src="{{ url_for('static', filename='img/parallax1.jpg')}}"></div>
+        <h1 class="white-text">Bienvenido a</h1>
+        <img src="https://www.telefonica.com/image/company_logo?img_id=4585436&t=1499119627358" alt="logo telefonica" class="<responsive-img></responsive-img>">
+        <h1 class="white-text">encuestas</h1>
+      </div>
+
+      <div class="section white">
+        <div class="container">
+          <div class="tmBlue-text">
+            <h2 class="center tagline">Envíe preguntas abiertas directamente al móvil de su mercado objetivo y reciba las respuestas clasificadas y analizadas automáticamente.</h2>
+          </div>
+          <div class="row" id="equalheight">
+            <div class="col s12 m4 center">
+              <div class="card-panel">
+                <i class="material-icons large tmGreen-text">volume_up</i>
+                <h3 class="tmBlue-text steps">1. Escriba pregunta y elija mercado objetivo</h3>
+              </div>
+            </div>
+            <div class="col s12 m4 center">
+              <div class="card-panel">
+                <i class="material-icons large tmGreen-text">question_answer</i>
+                <h3 class="tmBlue-text steps">2. Reciba las respuestas por SMS</h3>
+              </div>
+            </div>
+            <div class="col s12 m4 center">
+              <div class="card-panel">
+                <i class="material-icons large tmGreen-text">web</i>
+                <h3 class="tmBlue-text steps">3. Obtenga un reporte y clasificación de las respuestas</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container center parallax-section-title  scroll-divs" id="process">
+        <div class="parallax"><img src="{{ url_for('static', filename='img/parallax2.jpg')}}"></div>
+        <h3 class="white-text">Ejemplo de proceso:</h3>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <div class="card-panel">
+              <h5 class="grey-text center">Escriba pregunta</h5>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="input_text" type="text" data-length="100">
+                  <label for="input_text">Pregunta</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card-panel">
+              <h5 class="grey-text center">Seleccione comunidades</h5>
+              <p>
+                <input type="checkbox" id="com01" />
+                <label for="com01">Andalucía</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com02" />
+                <label for="com02">Aragón</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com03" />
+                <label for="com03">Islas Baleares</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com04" />
+                <label for="com04">Canarias</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com05" />
+                <label for="com05">Cantabria</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com06" />
+                <label for="com06">Castilla-La Mancha</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com07" />
+                <label for="com07">Castilla y León</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com08" />
+                <label for="com08">Cataluña</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com09" />
+                <label for="com09">Comunidad de Madrid</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com10" />
+                <label for="com10">Comunidad Floral de Navarra</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com11" />
+                <label for="com11">Comunidad Valenciana</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com12" />
+                <label for="com012">Extremadura</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com13" />
+                <label for="com13">Galicia</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com14" />
+                <label for="com14">País Vasco</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com15" />
+                <label for="com15">Principado de Asturias</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com16" />
+                <label for="com16">Región de Murcia</label>
+              </p>
+              <p>
+                <input type="checkbox" id="com17" />
+                <label for="com17">La Rioja</label>
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card-panel">
+              <h5 class="grey-text center">Seleccione género</h5>
+              <div class="row">
+                <div class="col s4 m6 l4">
+                  <p>
+                    <input name="gender" type="radio" id="male" />
+                    <label for="male">Hombres</label>
+                  </p>
+                </div>
+                <div class="col s4">
+                  <p>
+                    <input name="gender" type="radio" id="female" />
+                    <label for="female">mujeres</label>
+                  </p>
+                </div>
+                <div class="col s4">
+                  <p>
+                    <input name="gender" type="radio" id="both" />
+                    <label for="both">Ambos</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card-panel slider-panel">
+              <h5 class="grey-text center">Seleccione rango de edades</h5>
+              <div class="row">
+                <div class="col s5">
+                  <div class="tmBlue value-tag">
+                    <p id="age-lower-value" class="left-tag " data-badge-caption="años" style="background-color:#0af;"></p>
+                  </div>
+                </div>
+                <div class="col s2">
+                  <p class="center tmBlue-text">-</p>
+                </div>
+                <div class="col s5">
+                  <div class="tmBlue value-tag">
+                    <p id="age-upper-value" class="right-tag" data-badge-caption="años" style="background-color:#0af;"></p>
+                  </div>
+                </div>
+              </div>
+              <div id="age-slider"></div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card-panel slider-panel">
+              <h5 class="grey-text center">Seleccione rango de ARPU</h5>
+              <div class="row">
+                <div class="col s5">
+                  <div class="tmBlue value-tag">
+                    <p id="arpu-lower-value" class="left-tag " data-badge-caption="EUR" style="background-color:#0af;"></p>
+                  </div>
+                </div>
+                <div class="col s2">
+                  <p class="center tmBlue-text">-</p>
+                </div>
+                <div class="col s5">
+                  <div class="tmBlue value-tag">
+                    <p id="arpu-upper-value" class="right-tag" data-badge-caption="EUR" style="background-color:#0af;"></p>
+                  </div>
+                </div>
+              </div>
+              <div id="arpu-slider"></div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 center">
+            <a class="waves-effect waves-light btn" href="#results"><i class="material-icons right">send</i>Enviar pregunta</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-divider" id="results"></div>
+
+      <div class="parallax-container center parallax-section-title-2">
+        <div class="parallax"><img src="{{ url_for('static', filename='img/parallax2.jpg')}}"></div>
+        <h3 class="white-text">Ejemplo de resultados:</h3>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel center">
+            <h4 class="tmBlue-text">Sentimiento</h4>
+            <div id="sentiment"></div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel center">
+            <h4 class="tmBlue-text">Temas</h4>
+            <div id="topics"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel center">
+            <h4 class="tmBlue-text">Frecuencia</h4>
+            <div id="frequency"></div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel center">
+            <h4 class="tmBlue-text">Palabras Clave</h4>
+            <div id="keywords"></div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="page-footer tmBlue">
+        <div class="container tmBlue">
+            <div class="row">
+                <div class="col s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a company that specializes in text analytics. Pollstr uses advanced machine learning and NLP algorithms in order to make sense of thousands or even millions of lines of text in seconds. If you need to analyze text from any other
+                        source, please contact us at partners@pollstr.io</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright pulsegreen">
+            <div class="container">
+                Powered by <a class="tmGreen-text" href="http://www.pollstr.io">pollstr.io</a>
+            </div>
+        </div>
+    </footer>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/materialize.min.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/wNumb.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/nouislider.min.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/slider.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/smoothScroll.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/equalheight.js')}}"></script>
+      <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/donut.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/cardinal.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/pie.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/barKeywords.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/comandos.js')}}"></script>
+    	<script>
+    		$('#equalheight div').equalHeights();
+    	</script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+       $('select').material_select();
+       $('.parallax').parallax();
+      });
+      </script>
+</body>
+
+</html>
